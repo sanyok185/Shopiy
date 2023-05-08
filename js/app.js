@@ -438,6 +438,14 @@
             animOnScroll();
         }), 300);
     }
+    const animElems = document.querySelectorAll("._anim-elems");
+    const script_image = document.querySelector(".your-img");
+    script_image.onload = () => {
+        for (let index = 0; index < animElems.length; index++) {
+            const animItem = animElems[index];
+            animItem.classList.add("_active");
+        }
+    };
     window["FLS"] = true;
     isWebp();
     menuInit();

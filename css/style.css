@@ -564,6 +564,14 @@ body {
      -moz-column-gap: 3.4375rem;
           column-gap: 3.4375rem;
   margin-top: 2.0625rem;
+  -webkit-transition: all 1.8s ease 1.1s;
+  -o-transition: all 1.8s ease 1.1s;
+  transition: all 1.8s ease 1.1s;
+  opacity: 0;
+}
+
+.main-section__marks._active {
+  opacity: 1;
 }
 
 .main-section__mark {
@@ -634,10 +642,22 @@ body {
 
 .main-section__form {
   margin-top: 3.125rem;
+  -webkit-transition: all 1.8s ease 1.1s;
+  -o-transition: all 1.8s ease 1.1s;
+  transition: all 1.8s ease 1.1s;
+  opacity: 0;
+}
+
+.main-section__form._active {
+  opacity: 1;
 }
 
 .cart_1 {
   position: absolute;
+  -webkit-transition: all 1.8s ease 1.1s;
+  -o-transition: all 1.8s ease 1.1s;
+  transition: all 1.8s ease 1.1s;
+  opacity: 0;
 }
 
 .cart_1__container {
@@ -761,6 +781,10 @@ body {
 .cart_1__text {
   margin-top: 0.25rem;
   margin-bottom: 2.1875rem;
+}
+
+.cart_1._active {
+  opacity: 1;
 }
 
 .cart_2 {
@@ -1834,7 +1858,7 @@ body {
     -ms-grid-rows: 1fr;
     -ms-grid-columns: 1fr 0 1fr 0 1fr 0 1fr;
         grid-template: repeat(1, 1fr)/repeat(4, 1fr);
-    max-width: 100%;
+    width: 100%;
     gap: 0;
   }
 
@@ -1866,10 +1890,6 @@ body {
 
   .what__content {
     padding-bottom: 2.5rem;
-  }
-
-  .what__items {
-    max-width: 30.625rem;
   }
 
   .what__items {
